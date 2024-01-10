@@ -1,4 +1,4 @@
-baseURL: "http://127.0.0.1:5500/public/"
+baseURL: "http://127.0.0.1:5500/"
 relativeURLs: true
 languageCode: "en-us"
 title: "Vidyut Ramanan"
