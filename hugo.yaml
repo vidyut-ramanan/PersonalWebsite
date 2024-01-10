@@ -104,7 +104,6 @@ params:
       enable: true
       showOnScrollUp: true
     menus:
-      relativeURLs: false
       disableAbout: false
       disableExperience: false
       disableEducation: false
