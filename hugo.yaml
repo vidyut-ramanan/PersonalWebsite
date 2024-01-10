@@ -1,4 +1,5 @@
-#baseURL: "http://localhost:1313/"
+baseURL: "http://127.0.0.1:5500/public/"
+relativeURLs: true
 languageCode: "en-us"
 title: "Vidyut Ramanan"
 theme: hugo-profile
