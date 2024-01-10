@@ -1,0 +1,344 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "Vidyut Ramanan"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+
+  #Dropdown menu
+  # - identifier: dropdown
+  #   title: Example dropdown menu
+  #   name: Dropdown
+  #   weight: 3
+  # - identifier: dropdown1
+  #   title: example dropdown 1
+  #   name: example 1
+  #   url: /#
+  #   parent: dropdown
+  #   weight: 1
+  # - identifier: dropdown2
+  #   title: example dropdown 2
+  #   name: example 2
+  #   url: /#
+  #   parent: dropdown
+  #   weight: 2
+
+params:
+  title: "Vidyut Ramanan"
+  description: Personal Website For Vidyut Ramanan
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Vidyut Ramanan" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Vidyut."
+    subtitle: "I am a full stack developer"
+    content: "A passionate full stack developer and I go to Northeastern University."
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/resume.pdf"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/vidyut-ramanan
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    content: |-
+      I'm a software developer with a passion for both frontend and backend projects. 
+      Currently, I'm taking classes at Northeastern University, but I am looking for a Fall 2024 Co-op.
+
+    skills:
+      enable: true
+      title: "Here are a few languages I'm familiar with:"
+      items:
+        - "C#"
+        - "Java"
+        - "Python"
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Work Experience"
+    items:
+      - job: "Software Engineering Co-op"
+        company: "Millipore Sigma"
+        companyUrl: "https://www.sigmaaldrich.com/US/en"
+        date: "Jul 2023 - Dec 2023"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+
+          I most recently worked as a software engineer at Millipore Sigma in Danvers, MA for a 6 month co-op. 
+          In my time there, I worked on a range of full stack applications.
+
+          Some of the technologies I used:
+
+          - .NET
+          - Angular
+          - ASP.NET
+          - HTML
+          - CSS
+          - TypScript
+
+      - job: "Teaching Assistant"
+        company: "Northeastern University"
+        companyUrl: "https://www.khoury.northeastern.edu/about/"
+        date: "Sept 2022 - May 2023"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          I had to opportunity to work as a TA for Fundementals of Computer Science 1, an introductory computer science course at Northeastern. 
+          - Led labs and explained concepts to the class.
+          - Offered weekly office hours.
+          - Graded assignments.
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Candidate for Bachelor of Science degree in Computer Science"
+        school:
+          name: "Northeastern University"
+          url: "https://www.northeastern.edu/"
+        date: "2021 - Present"
+        GPA: "3.85 out of 4.0"
+        content: |-
+          Software Courses:
+          - Fundamentals of Computer Science 1 & 2
+          - Cybersecurity
+          - Object Oriented Design
+          - Systems
+          - Networks and Distributed Systems
+
+          Artificial Inteligence Courses:
+          - Foundations of Data Science
+          - Machine Learning and Data Mining 1
+          - Natural Language Processing
+
+          Theory Courses:
+          - Discrete Structures
+          - Mathematics of Data Models
+          - Linear Algebra
+          - Algorithms and Data
+          - Theory of Computation
+
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievment.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievment.jpg
+      - title: Vidyut Ramanan
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievment.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: AI Clothing Recommendation App
+        content:
+          A mobile app that allows users to upload pictures of their clothing and utilizes
+          Open AI's CLIP model as well as AI image generation to help the user style the article of clothing
+        image: BrownShirt.png
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "React Native"
+          - "Expo"
+          - "FireBase"
+          - "FastApi"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/screenshot.png
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/vidyut-ramanan
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contact Me"
+    content: My inbox is always open. Whether you have a job offer or a project idea, feel free to shoot me an email and I’ll try my best to get back to you!
+    email: ramanan.v@northeastern.edu
+    btnName: Send me an email
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/vidyut-ramanan
+      linkedin: https://www.linkedin.com/in/vidyutramanan/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
