@@ -1,4 +1,4 @@
-baseURL: "http://127.0.0.1:5500/"
+baseURL: "http://127.0.0.1:5500/PersonalWebsite"
 relativeURLs: true
 languageCode: "en-us"
 title: "Vidyut Ramanan"
@@ -261,14 +261,11 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: AI Clothing Recommendation App
+      - title: Dapper - AI Clothing Recommendation App
         content:
           A mobile app that allows users to upload pictures of their clothing and utilizes
           Open AI's CLIP model as well as AI image generation to help the user style the article of clothing
         image: BrownShirt.png
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
         badges:
           - "React Native"
           - "Expo"
@@ -276,21 +273,21 @@ params:
           - "FastApi"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/Drtygor/RevDapper
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/screenshot.png
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+      - title: BeGroovy
+        content: A social website for users to share what songs they're listening to react to songs others are listening to. Integrated with Spotify API
+        image: BeGroovy.jpeg
+
         badges:
-          - "Hugo"
+          - "React.js"
+          - "Vite"
           - "Bootstrap"
-          - "Javascript"
+          - "Node.js"
+          - "Supabase"
         links:
           - icon: fab fa-github
-            url: https://github.com/vidyut-ramanan
+            url: https://github.com/LOTaher/BeGroovy
 
   #Contact
   contact:
