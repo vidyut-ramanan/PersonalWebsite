@@ -286,7 +286,7 @@ params:
           - "Supabase"
         links:
           - icon: fab fa-github
-            url: https://github.com/LOTaher/BeGroovy
+            url: https://github.com/vidyut-ramanan/NBADraftPrediction
 
       - title: NBA Draft Prediction with Machine Learning
         content: Utilized multiple machine learning models to predict if a player will be drafted from their college stats
@@ -318,8 +318,10 @@ params:
           - icon: fab fa-github
             url: https://github.com/vidyut-ramanan/Bountiful_hackMIT2022
 
-      - title: NBA Draft Prediction with Machine Learning
-        content: Utilized multiple machine learning models to predict if a player will be drafted from their college stats
+      - title: Image Processor
+        content:
+          A desktop application with a Java Swing GUI. It can load and save images
+          as well as apply many filters and transformations such as grayscale, rotation, etc.
         image: NBA.jpeg
 
         badges:
