@@ -18,6 +18,8 @@
     }
 </script>
 
+
+
 <!-- Show header on scroll up -->
 {{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
@@ -47,7 +49,7 @@
 
 <!-- Navbar -->
 <header id="profileHeader">
-    <nav class="pt-3 navbar navbar-expand-lg {{ if .Site.Params.animate }}animate{{ end }}">
+    <nav id ="navbar" class="pt-3 navbar navbar-expand-lg {{ if .Site.Params.animate }}animate{{ end }}">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             <!-- navbar brand -->
             <a class="navbar-brand primary-font text-wrap" href="./">
@@ -198,3 +200,29 @@
         </div>
     </nav>
 </header>
+
+<script>
+  var windowHeight = window.screen.availHeight
+  document.getElementById("profileHeader").classList.add("dark")
+
+     window.addEventListener("scroll", function changeHeaderOnScroll() {
+        var prevScrollPos = window.pageYOffset;
+       
+        if(prevScrollPos === 0){
+            document.getElementById("profileHeader").classList.add("dark")
+
+            document.getElementById("navbar").classList.add("animate")
+        }else
+        if(prevScrollPos > windowHeight){
+            document.getElementById("navbar").classList.add("animate")
+           
+            document.getElementById("profileHeader").classList.remove("dark")
+        }else{
+            
+            document.getElementById("navbar").classList.remove("animate")
+
+        }
+        
+     })
+    
+</script>

@@ -102,7 +102,7 @@ params:
     # searchPlaceholder: "Search"
     stickyNavBar:
       enable: true
-      showOnScrollUp: true
+      showOnScrollUp: false
     menus:
       disableAbout: false
       disableExperience: false
@@ -119,7 +119,7 @@ params:
     subtitle: "I am a full stack developer"
     content: "A passionate full stack developer and I go to Northeastern University."
     bottomImage:
-      enable: true
+      enable: false
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
@@ -179,7 +179,7 @@ params:
           - ASP.NET
           - HTML
           - CSS
-          - TypScript
+          - TypeScript
 
       - job: "Teaching Assistant"
         company: "Northeastern University"
