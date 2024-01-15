@@ -262,7 +262,7 @@ params:
     # title: "Custom Name"
     items:
       - title: Dapper
-        content: A mobile app that utilizes
+        content: Dapper is a mobile app that utilizes
           Open AI's CLIP model as well as AI image generation to help the user style an article of clothing by uploading a picture of it.
         image: BrownShirt.png
         badges:
@@ -275,7 +275,7 @@ params:
             url: https://github.com/Drtygor/RevDapper
 
       - title: BeGroovy
-        content: A social website for users to share what songs they're listening to react to songs others are listening to. Integrated with Spotify API.
+        content: BeGroovy is a social website for users to share what songs they're listening to react to songs others are listening to. Integrated with Spotify API.
         image: BeGroovy.jpeg
 
         badges:
@@ -289,8 +289,8 @@ params:
             url: https://github.com/LOTaher/BeGroovy
 
       - title: NBA Draft Prediction with Machine Learning
-        content: A social website for users to share what songs they're listening to react to songs others are listening to. Integrated with Spotify API
-        image: BeGroovy.jpeg
+        content: Utilized multiple machine learning models to predict if a player will be drafted from their college stats
+        image: NBA.jpeg
 
         badges:
           - "React.js"
@@ -302,6 +302,35 @@ params:
           - icon: fab fa-github
             url: https://github.com/LOTaher/BeGroovy
 
+      - title: Bountiful - HackMIT 2022
+        content: Bountiful is a game that encourages generosity,
+          thoughtful thinking, and cooperation featuring the "bounty" system, an extensible game framework incentivizing active game development and donations to local charities.
+          Developed for Hack MIT.
+        image: bountiful.png
+
+        badges:
+          - "React.js"
+          - "Vite"
+          - "Bootstrap"
+          - "Node.js"
+          - "Supabase"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/vidyut-ramanan/Bountiful_hackMIT2022
+
+      - title: NBA Draft Prediction with Machine Learning
+        content: Utilized multiple machine learning models to predict if a player will be drafted from their college stats
+        image: NBA.jpeg
+
+        badges:
+          - "React.js"
+          - "Vite"
+          - "Bootstrap"
+          - "Node.js"
+          - "Supabase"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LOTaher/BeGroovy
   #Contact
   contact:
     enable: true
