@@ -261,10 +261,9 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Dapper - AI Clothing Recommendation App
-        content:
-          A mobile app that allows users to upload pictures of their clothing and utilizes
-          Open AI's CLIP model as well as AI image generation to help the user style the article of clothing
+      - title: Dapper
+        content: A mobile app that utilizes
+          Open AI's CLIP model as well as AI image generation to help the user style an article of clothing by uploading a picture of it.
         image: BrownShirt.png
         badges:
           - "React Native"
@@ -276,6 +275,20 @@ params:
             url: https://github.com/Drtygor/RevDapper
 
       - title: BeGroovy
+        content: A social website for users to share what songs they're listening to react to songs others are listening to. Integrated with Spotify API.
+        image: BeGroovy.jpeg
+
+        badges:
+          - "React.js"
+          - "Vite"
+          - "Bootstrap"
+          - "Node.js"
+          - "Supabase"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LOTaher/BeGroovy
+
+      - title: NBA Draft Prediction with Machine Learning
         content: A social website for users to share what songs they're listening to react to songs others are listening to. Integrated with Spotify API
         image: BeGroovy.jpeg
 
