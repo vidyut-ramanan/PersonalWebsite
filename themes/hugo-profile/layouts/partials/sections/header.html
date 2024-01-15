@@ -54,7 +54,7 @@
             <!-- navbar brand -->
             <a class="navbar-brand primary-font text-wrap" href="./">
                 {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) .Site.Params.navbar.showBrandLogo | default true }}
-                <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
+                <img id = "logo" src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
                     class="d-inline-block align-top">
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ else }}
@@ -202,18 +202,22 @@
 </header>
 
 <script>
-  var windowHeight = window.screen.availHeight
-  document.getElementById("profileHeader").classList.add("dark")
+    document.getElementById("logo").src = "./my-logo-white.png"
+
+    var windowHeight = window.screen.availHeight
+    document.getElementById("profileHeader").classList.add("dark")
 
      window.addEventListener("scroll", function changeHeaderOnScroll() {
         var prevScrollPos = window.pageYOffset;
        
         if(prevScrollPos === 0){
+            document.getElementById("logo").src = "./my-logo-white.png"
             document.getElementById("profileHeader").classList.add("dark")
 
             document.getElementById("navbar").classList.add("animate")
         }else
         if(prevScrollPos > windowHeight){
+            document.getElementById("logo").src = "./fav.png"
             document.getElementById("navbar").classList.add("animate")
            
             document.getElementById("profileHeader").classList.remove("dark")
