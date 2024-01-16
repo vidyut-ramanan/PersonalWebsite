@@ -1,4 +1,5 @@
 {{ if .Site.Params.hero.enable | default false }}
+
 <section id="hero" class="py-5 align-middle" style = "background-image: url('background.avif'); background-repeat: no-repeat;background-position: center; background-size: cover; background-attachment: fixed;">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
@@ -6,7 +7,7 @@
                 <span class="subtitle">
                     {{ .Site.Params.hero.intro }}
                 </span>
-                <h2>
+                <h2 class="typewriter">
                     {{ .Site.Params.hero.title }}
                 </h2>
                 <h3>

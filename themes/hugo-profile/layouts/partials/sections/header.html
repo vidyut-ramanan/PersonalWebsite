@@ -20,6 +20,12 @@
 </script>
 
 
+<style>
+    .navbar .nav-link.active {
+  color: var(--primary-color) !important;
+}
+</style>
+
 
 
 
@@ -210,7 +216,7 @@
    
     window.addEventListener("scroll", function highlightHeaderOnScroll() {
         let elementHeightSoFar = 0
-         elementHeightSoFar += navHeight
+        elementHeightSoFar += navHeight
 
         for(let e of document.getElementsByTagName("section")){
         let currentY = window.pageYOffset
@@ -223,7 +229,7 @@
             //console.log(currentY)
             //console.log(e.id)
             for(let link of document.getElementsByTagName("a")){
-               
+                link.classList.remove("active")
                 if(link.href.split("/")[link.href.split("/").length - 1] === "#"+ e.id){
                     link.classList.add("active")
                 }
