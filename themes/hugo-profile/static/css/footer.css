@@ -62,3 +62,8 @@ footer .card > .card-header .card-img-top {
   object-fit: cover;
   background-color: transparent !important;
 }
+/*
+footer > div.background {
+  background-color: var(--secondary-color);
+}
+*/

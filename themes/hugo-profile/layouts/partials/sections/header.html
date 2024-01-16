@@ -219,12 +219,29 @@
         let elementHeightSoFar = 0
         elementHeightSoFar += navHeight
 
+        let contactHeight = document.getElementById("contact").offsetHeight
+        let footerHeight = document.getElementById("my-footer").offsetHeight
+        let remainingHeight = document.body.offsetHeight - contactHeight - footerHeight;
+
+        if(remainingHeight - window.pageYOffset - contactHeight  - 50 < 0){
+            for(let link of document.getElementsByTagName("a")){
+                link.classList.remove("active")
+                
+                if(link.href.split("/")[link.href.split("/").length - 1] === "#contact"){
+                    link.classList.add("active")
+                }
+                
+            }
+            return
+        }
+
         for(let e of document.getElementsByTagName("section")){
         let currentY = window.pageYOffset
         let elementHeight = e.offsetHeight
         elementHeightSoFar += elementHeight
         
-        
+     
+
         if(elementHeightSoFar >= currentY + 5){
             console.log("Height so far: " + elementHeightSoFar)
             console.log("Current y scroll: " + currentY)
@@ -238,6 +255,8 @@
             
             break
         }
+
+        
     }
     })
 
