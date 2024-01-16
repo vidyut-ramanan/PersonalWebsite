@@ -29,6 +29,7 @@
 
 
 
+
 <!-- Show header on scroll up -->
 {{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
@@ -224,10 +225,10 @@
         elementHeightSoFar += elementHeight
         
         
-        if(elementHeightSoFar > currentY){
-            //console.log(elementHeightSoFar)
-            //console.log(currentY)
-            //console.log(e.id)
+        if(elementHeightSoFar >= currentY + 5){
+            console.log("Height so far: " + elementHeightSoFar)
+            console.log("Current y scroll: " + currentY)
+            console.log("Section:"  + e.id)
             for(let link of document.getElementsByTagName("a")){
                 link.classList.remove("active")
                 if(link.href.split("/")[link.href.split("/").length - 1] === "#"+ e.id){
