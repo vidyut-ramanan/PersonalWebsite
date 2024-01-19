@@ -212,18 +212,27 @@
 </header>
 
 <script>
-    let navHeight = document.getElementById("profileHeader").offsetHeight
+    
     
    
     window.addEventListener("scroll", function highlightHeaderOnScroll() {
+        let navHeight = document.getElementById("profileHeader").offsetHeight
+        var windowHeight = window.screen.availHeight
+        //console.log (document.body.scrollHeight)
+        //console.log (windowHeight)
+        console.log(document.body.offsetHeight - window.innerHeight - window.pageYOffset)
+       
+
         let elementHeightSoFar = 0
         elementHeightSoFar += navHeight
 
         let contactHeight = document.getElementById("contact").offsetHeight
         let footerHeight = document.getElementById("my-footer").offsetHeight
         let remainingHeight = document.body.offsetHeight - contactHeight - footerHeight;
-
-        if(remainingHeight - window.pageYOffset - contactHeight  - 50 < 0){
+        //console.log(windowHeight)
+        //console.log(document.body.offsetHeight - window.pageYOffset - windowHeight)
+        
+        if(remainingHeight - window.pageYOffset - contactHeight  - 50 < 0 || document.body.offsetHeight - window.innerHeight - window.pageYOffset <=0){
             for(let link of document.getElementsByTagName("a")){
                 link.classList.remove("active")
                 
@@ -243,9 +252,9 @@
      
 
         if(elementHeightSoFar >= currentY + 5){
-            console.log("Height so far: " + elementHeightSoFar)
-            console.log("Current y scroll: " + currentY)
-            console.log("Section:"  + e.id)
+            //console.log("Height so far: " + elementHeightSoFar)
+            //console.log("Current y scroll: " + currentY)
+            //console.log("Section:"  + e.id)
             for(let link of document.getElementsByTagName("a")){
                 link.classList.remove("active")
                 if(link.href.split("/")[link.href.split("/").length - 1] === "#"+ e.id){
@@ -268,10 +277,11 @@
 <script>
     document.getElementById("logo").src = "./my-logo-white.png"
 
-    var windowHeight = window.screen.availHeight
+    
     document.getElementById("profileHeader").classList.add("dark")
 
      window.addEventListener("scroll", function changeHeaderOnScroll() {
+        var windowHeight = window.screen.availHeight
         var prevScrollPos = window.pageYOffset;
        
         if(prevScrollPos === 0){

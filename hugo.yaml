@@ -284,6 +284,7 @@ params:
           - "Bootstrap"
           - "Node.js"
           - "Supabase"
+
         links:
           - icon: fab fa-github
             url: https://github.com/LOTaher/BeGroovy
@@ -293,11 +294,10 @@ params:
         image: NBA.jpeg
 
         badges:
-          - "React.js"
-          - "Vite"
-          - "Bootstrap"
-          - "Node.js"
-          - "Supabase"
+          - "Python"
+          - "Scikit-learn"
+          - "NumPy"
+          - "Pandas"
         links:
           - icon: fab fa-github
             url: https://github.com/vidyut-ramanan/NBADraftPrediction
@@ -309,11 +309,8 @@ params:
         image: bountiful.png
 
         badges:
-          - "React.js"
-          - "Vite"
-          - "Bootstrap"
-          - "Node.js"
-          - "Supabase"
+          - "C#"
+          - "Figma"
         links:
           - icon: fab fa-github
             url: https://github.com/vidyut-ramanan/Bountiful_hackMIT2022
@@ -322,15 +319,27 @@ params:
         content:
           A desktop application with a Java Swing GUI. It can load and save images
           as well as apply many filters and transformations such as grayscale, rotation, etc.
-        image: NBA.jpeg
+        image: processor.jpeg
 
         badges:
-          - "React.js"
-          - "Vite"
-          - "Bootstrap"
-          - "Node.js"
-          - "Supabase"
+          - "Java"
+          - "Java Swing"
+          - "Model View Controller"
+
+      - title: Personal Website
+        content:
+          This personal website was created using Hugo, a static site genorator and hosted with Github Pages. Added Custom CSS
+          and JavaScript for an interactive design
+        image: background-crop.jpeg
+
+        badges:
+          - "Hugo"
+          - "JavaScript"
+          - "HTML"
+          - "CSS"
         links:
+          - icon: fab fa-github
+            url: https://github.com/vidyut-ramanan/NBADraftPrediction
 
   #Contact
   contact:
