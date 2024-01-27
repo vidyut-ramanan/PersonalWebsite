@@ -117,7 +117,9 @@ params:
     intro: "Hi, my name is"
     title: "Vidyut."
     subtitle: "I am a full stack developer"
-    content: "A passionate full stack developer and I go to Northeastern University."
+    content:
+      As a passionate full stack developer attending Northeastern University, I am eager to share my journey.
+      Here, you'll find a fusion of my skills in software development, showcased through notable projects and work experiences.
     bottomImage:
       enable: false
     # roundImage: true # Make hero image circular | default false
@@ -137,9 +139,11 @@ params:
     enable: true
     title: "About Me"
     content: |-
-      I'm a software developer with a passion for both frontend and backend projects. 
-      Currently, I'm taking classes at Northeastern University, but I am looking for a Fall 2024 Co-op.
+      As a Computer Science major at Northeastern University, I am passionate about learning and applying Artificial Intelligence and Full-Stack Development skills to real-world problems. I am pursuing a concentration in AI and have completed courses in Machine Learning, Algorithms and Data Structures, and Object Oriented Design.
 
+      I recently completed a six-month co-op at MilliporeSigma, a leading life science company, where I worked as a Software Engineer. I contributed to the development, testing, and deployment of web applications and APIs using C# and .NET. I also collaborated with cross-functional teams and stakeholders to deliver high-quality and user-friendly solutions.
+
+      I am currently looking for a Fall 2024 Co-op.
     skills:
       enable: true
       title: "Here are a few languages I'm familiar with:"
