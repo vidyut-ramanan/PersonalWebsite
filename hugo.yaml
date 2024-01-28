@@ -332,7 +332,7 @@ params:
 
       - title: Personal Website
         content:
-          This personal website was created using Hugo, a static site genorator and hosted with Github Pages. Added Custom CSS
+          This personal website was created using Hugo, a static site generator and hosted with Github Pages. Added Custom CSS
           and JavaScript for an interactive design
         image: background-crop.jpeg
 
